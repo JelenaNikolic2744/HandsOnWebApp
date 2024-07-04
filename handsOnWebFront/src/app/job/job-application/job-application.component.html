@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-sm-12">
+    <div class="centar">
+      <app-alert [message]="messageError" *ngIf="messageError" (close)="onClose()"></app-alert>
+      <form class="form" [formGroup]="form" (ngSubmit)="onSubmit(form)">
+        <label>Username</label><br />
+        <input formControlName="userName" type="text" class="form-control" required />
+        <br />
+        <label>Email</label><br />
+        <input formControlName="userEmail" type="text" class="form-control" required />
+        <br />
+        <label>Tell us about yourself</label><br />
+        <input formControlName="applianceText" type="text" class="form-control"
+            required />
+        <br />
+        <br />
+        <div class="buttonHolder">
+          <button class="btn btn-primary" type="submit">Apply</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

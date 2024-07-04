@@ -1,0 +1,26 @@
+table.details {
+  width: 250px;
+  margin: auto;
+  height: 230px;
+  border: 2px solid black;
+}
+
+table.details td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+table.details th {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.headDetail {
+  text-align: center;
+}
+
+
+.btn{
+  width: -moz-available;
+  height: 30px;
+}

@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-sm-12">
+    <div class="proba">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="4">JOB LIST</th>
+          </tr>
+          <tr>
+            <th>Job name</th>
+            <th>Company name</th>
+          </tr>
+        </thead>
+      </table>
+      <app-job-list *ngFor="let jobList of jobs; let i = index" [job]="jobList"
+        (jobSelected)="getSelectedJob(i)"></app-job-list>
+    </div>
+  </div>
+</div>
